@@ -6,16 +6,12 @@
         xmlns:local="clr-namespace:Wpf_C__LESSON_1._1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Name ="GridButtons">
-
-        <Button Name = "bt1" Content="1" Width="150" Height="80" Background="Red" FontSize="40" Margin="100,100,550,240" Click="bt1_Click" ></Button>
-        <Button Name = "bt2" Content="2" Width="150" Height="80" Background="Yellow" FontSize="40" Margin="341,106,309,247" Click="bt2_Click"  ></Button>
-        <Button Name = "bt3" Content="3" Width="150" Height="80" Background="Blue" FontSize="40" Margin="582,100,60,240" Click="bt3_Click"  ></Button>
-        <Button Name = "bt4" Content="4" Width="150" Height="80" Background="Green" FontSize="40" Margin="100,170,550,0" Click="bt4_Click"  ></Button>
-        <Button Name = "bt5" Content="5" Width="150" Height="80" Background="Pink" FontSize="40" Margin="100,170,68,0" Click="bt5_Click" ></Button>
-        <Button Name = "bt6" Content="6" Width="150" Height="80" Background="Orange" FontSize="40" Margin="522,170,0,0" Click="bt6_Click" ></Button>
-
-
-
+       <Grid Name ="GridButtons">
+        <Button Name = "bt1" Content="1" Width="150" Height="80" Background="Red" FontSize="40" Margin="0 0 350 200" Mouse.PreviewMouseDown="bt1_PreviewMouseDown"  ></Button>
+        <Button Name = "bt2" Content="2" Width="150" Height="80" Background="Yellow" FontSize="40" Margin="50 0 0 200"  Mouse.PreviewMouseDown="bt2_Click"  ></Button>
+        <Button Name = "bt3" Content="3" Width="150" Height="80" Background="Blue" FontSize="40" Margin="450 0 0 200"  Mouse.PreviewMouseDown="bt3_Click"  ></Button>
+        <Button Name = "bt4" Content="4" Width="150" Height="80" Background="Green" FontSize="40" Margin="0 50 350 0" Mouse.PreviewMouseDown="bt4_Click"  ></Button>
+        <Button Name = "bt5" Content="5" Width="150" Height="80" Background="Pink" FontSize="40" Margin="50 50 0 0"  Mouse.PreviewMouseDown="bt5_Click" ></Button>
+        <Button Name = "bt6" Content="6" Width="150" Height="80" Background="Orange" FontSize="40" Margin="450 50 0 0 "  Mouse.PreviewMouseDown="bt6_Click" ></Button>
     </Grid>
 </Window>
