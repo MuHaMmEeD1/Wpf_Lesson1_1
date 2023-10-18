@@ -25,10 +25,12 @@ namespace Wpf_C__LESSON_1._1
             InitializeComponent();
         }
 
-        private void bt1_Click(object sender, RoutedEventArgs e)
+         private void bt1_Click(object sender, RoutedEventArgs e)
         {
-            if(((MouseEventArgs)e).LeftButton == MouseButtonState.Pressed) { bt1.Background = new SolidColorBrush(Color.FromRgb((byte)Random.Shared.Next(256), (byte)Random.Shared.Next(256), (byte)Random.Shared.Next(256))); }
-            else if(((MouseEventArgs)e).RightButton == MouseButtonState.Pressed) { GridButtons.Children.Remove(bt1); }
+            GridButtons.Children.Remove(bt1);
+            if (((MouseEventArgs)e).RightButton == MouseButtonState.Pressed) { GridButtons.Children.Remove(bt1); }
+           
+
 
         }
 
@@ -60,6 +62,12 @@ namespace Wpf_C__LESSON_1._1
         {
             if (((MouseEventArgs)e).LeftButton == MouseButtonState.Pressed) { bt6.Background = new SolidColorBrush(Color.FromRgb((byte)Random.Shared.Next(256), (byte)Random.Shared.Next(256), (byte)Random.Shared.Next(256))); }
             else if (((MouseEventArgs)e).RightButton == MouseButtonState.Pressed) { GridButtons.Children.Remove(bt6); }
+        }
+
+        private void bt1_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (((MouseEventArgs)e).LeftButton == MouseButtonState.Pressed) { bt1.Background = new SolidColorBrush(Color.FromRgb((byte)Random.Shared.Next(256), (byte)Random.Shared.Next(256), (byte)Random.Shared.Next(256))); }
+            else if (((MouseEventArgs)e).RightButton == MouseButtonState.Pressed) { GridButtons.Children.Remove(bt1); }
         }
     }
 }
