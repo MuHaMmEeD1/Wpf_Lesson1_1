@@ -20,12 +20,13 @@ namespace Wpf_C__LESSON_1._1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Random random = new Random();
         public MainWindow()
         {
             InitializeComponent();
         }
 
-         private void bt1_Click(object sender, RoutedEventArgs e)
+        private void bt1_Click(object sender, RoutedEventArgs e)
         {
             GridButtons.Children.Remove(bt1);
             if (((MouseEventArgs)e).RightButton == MouseButtonState.Pressed) { GridButtons.Children.Remove(bt1); }
